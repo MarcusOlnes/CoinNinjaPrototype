@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwvt0bf55bpl8"]
+
+[sub_resource type="GDScript" id="GDScript_simlv"]
+script/source = "extends Area2D
+
+
+var level := 1
+var neste_level_tall := level + 1
+var neste_level_navn := \"res://scener/level%d.tscn\" % neste_level_tall
+
+
+func _on_body_entered(body: Node2D):
+	if body is player:
+		get_tree().change_scene_to_file(\"res://scener/level_selection.tscn\")
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05pk1"]
+size = Vector2(120, 248)
+
+[node name="Portal" type="Area2D"]
+script = SubResource("GDScript_simlv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(50, 114)
+shape = SubResource("RectangleShape2D_05pk1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

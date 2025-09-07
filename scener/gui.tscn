@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxq5n7cip2bfw"]
+
+[ext_resource type="Script" path="res://scripts/gui.gd" id="1_4tsk6"]
+[ext_resource type="Texture2D" uid="uid://yxjk2hgj65rq" path="res://assets/sprites/coin.png" id="1_csfe4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dves6"]
+atlas = ExtResource("1_csfe4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r1f1x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dves6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_4tsk6")
+
+[node name="coins_counter" type="Label" parent="."]
+offset_left = 1073.0
+offset_right = 1418.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 60
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1039, 44)
+scale = Vector2(5.125, 5.5)
+sprite_frames = SubResource("SpriteFrames_r1f1x")

@@ -1,0 +1,368 @@
+[gd_scene load_steps=14 format=3 uid="uid://dnftmyo5ibus"]
+
+[ext_resource type="Script" path="res://scripts/level_selection.gd" id="1_aehhf"]
+[ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="1_nvuu3"]
+[ext_resource type="Texture2D" uid="uid://ded5xyq46jb7v" path="res://assets/blue_one.png" id="2_0ttma"]
+[ext_resource type="Script" path="res://scripts/stats_2.gd" id="4_rpa2k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vy6nu"]
+texture = ExtResource("2_0ttma")
+modulate_color = Color(0.470076, 0.470076, 0.470076, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bt7wd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bntx"]
+bg_color = Color(0.629675, 0.629675, 0.629675, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e66w7"]
+bg_color = Color(0.466181, 0.466181, 0.466181, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iqr46"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7dnxo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccutm"]
+bg_color = Color(0.712129, 0.712129, 0.712129, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oegjj"]
+bg_color = Color(0.544974, 0.544974, 0.544974, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sqnf2"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="level_selection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -6.0
+offset_right = 2.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aehhf")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vy6nu")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -264.0
+offset_top = 88.0
+offset_right = 265.0
+offset_bottom = 185.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("1_nvuu3")
+theme_override_font_sizes/font_size = 60
+text = "Level Selection"
+
+[node name="Stats" type="Button" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 208.0
+offset_right = 274.0
+offset_bottom = 322.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "1"
+
+[node name="Stats2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 208.0
+offset_right = 540.0
+offset_bottom = 322.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "2"
+script = ExtResource("4_rpa2k")
+
+[node name="Stats3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 208.0
+offset_right = 800.0
+offset_bottom = 322.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "3"
+
+[node name="Back2Main" type="Button" parent="."]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 88.0
+offset_right = 1108.0
+offset_bottom = 162.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7dnxo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ccutm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oegjj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_sqnf2")
+text = "Main Menu"
+
+[node name="Stats4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 208.0
+offset_right = 1068.0
+offset_bottom = 322.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "4"
+
+[node name="Stats5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 350.0
+offset_right = 274.0
+offset_bottom = 464.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "5"
+script = ExtResource("4_rpa2k")
+
+[node name="Stats6" type="Button" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 350.0
+offset_right = 540.0
+offset_bottom = 464.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "6"
+
+[node name="Stats7" type="Button" parent="."]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 350.0
+offset_right = 800.0
+offset_bottom = 464.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "7"
+
+[node name="Stats8" type="Button" parent="."]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 350.0
+offset_right = 1068.0
+offset_bottom = 464.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "8"
+script = ExtResource("4_rpa2k")
+
+[node name="Stats9" type="Button" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 494.0
+offset_right = 274.0
+offset_bottom = 608.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "9"
+
+[node name="Stats10" type="Button" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 494.0
+offset_right = 540.0
+offset_bottom = 608.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "10"
+
+[node name="Stats11" type="Button" parent="."]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 494.0
+offset_right = 800.0
+offset_bottom = 608.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "11"
+script = ExtResource("4_rpa2k")
+
+[node name="Stats12" type="Button" parent="."]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 494.0
+offset_right = 1068.0
+offset_bottom = 608.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "12"
+
+[connection signal="pressed" from="Stats" to="." method="_on_stats_pressed"]
+[connection signal="pressed" from="Stats2" to="." method="_on_stats_2_pressed"]
+[connection signal="pressed" from="Stats3" to="." method="_on_stats_3_pressed"]
+[connection signal="pressed" from="Back2Main" to="." method="_on_back_2_main_pressed"]
+[connection signal="pressed" from="Stats4" to="." method="_on_stats_4_pressed"]
+[connection signal="pressed" from="Stats5" to="." method="_on_stats_5_pressed"]
+[connection signal="pressed" from="Stats6" to="." method="_on_stats_6_pressed"]
+[connection signal="pressed" from="Stats7" to="." method="_on_stats_7_pressed"]
+[connection signal="pressed" from="Stats8" to="." method="_on_stats_8_pressed"]
+[connection signal="pressed" from="Stats9" to="." method="_on_stats_9_pressed"]
+[connection signal="pressed" from="Stats10" to="." method="_on_stats_10_pressed"]
+[connection signal="pressed" from="Stats11" to="." method="_on_stats_11_pressed"]
+[connection signal="pressed" from="Stats12" to="." method="_on_stats_12_pressed"]

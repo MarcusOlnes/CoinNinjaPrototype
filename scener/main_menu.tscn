@@ -1,0 +1,146 @@
+[gd_scene load_steps=9 format=3 uid="uid://c12vyxc0g15up"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_x1rii"]
+[ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="2_ku14w"]
+[ext_resource type="Texture2D" uid="uid://cbn4qsmd1i6s8" path="res://assets/green2.png" id="2_rx5rl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qulya"]
+texture = ExtResource("2_rx5rl")
+modulate_color = Color(0.597176, 0.597176, 0.597176, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2mqy0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5y28i"]
+bg_color = Color(0.629675, 0.629675, 0.629675, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lsv04"]
+bg_color = Color(0.466181, 0.466181, 0.466181, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lds6h"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x1rii")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qulya")
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qulya")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -171.5
+offset_top = -53.0
+offset_right = 171.5
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="LevelSelect3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2mqy0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5y28i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsv04")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lds6h")
+text = "Level Select
+"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2mqy0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5y28i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsv04")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lds6h")
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -314.5
+offset_top = 87.0
+offset_right = 314.5
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("2_ku14w")
+theme_override_font_sizes/font_size = 109
+text = "Coin Ninja
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 210.0
+offset_right = 742.0
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 17
+text = "Tip: Double jump for more height"
+
+[connection signal="pressed" from="VBoxContainer/LevelSelect3" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

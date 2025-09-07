@@ -1,0 +1,116 @@
+[gd_scene load_steps=9 format=3 uid="uid://pge6qns5t5xv"]
+
+[ext_resource type="Script" path="res://scripts/pause_meny.gd" id="1_3kyq5"]
+[ext_resource type="FontFile" uid="uid://d4bduu650o3tq" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="1_ft3n5"]
+[ext_resource type="Script" path="res://scripts/stats_2.gd" id="3_fvx00"]
+
+[sub_resource type="Theme" id="Theme_f1nwr"]
+default_font = ExtResource("1_ft3n5")
+default_font_size = 33
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wjuih"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qenjy"]
+bg_color = Color(0.629675, 0.629675, 0.629675, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_csiq8"]
+bg_color = Color(0.466181, 0.466181, 0.466181, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ntq1"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[node name="Pause_meny" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3kyq5")
+
+[node name="bakgrunn (colorrect)" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.196078, 0.196078, 0.196078, 0.639216)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+z_index = 2
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_f1nwr")
+theme_override_constants/separation = 14
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "PAUSED GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="resumeButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wjuih")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qenjy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_csiq8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ntq1")
+text = "Resume"
+script = ExtResource("3_fvx00")
+
+[node name="quitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wjuih")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qenjy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_csiq8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ntq1")
+text = "Quit level"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/resumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/quitButton" to="." method="_on_quit_button_pressed"]
