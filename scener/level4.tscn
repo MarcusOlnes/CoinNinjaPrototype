@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://1qse404fid8q"]
+[gd_scene load_steps=20 format=4 uid="uid://1qse404fid8q"]
 
 [ext_resource type="Texture2D" uid="uid://fby6yul2imre" path="res://assets/sprites/bakgrunn.png" id="1_xp00g"]
 [ext_resource type="PackedScene" uid="uid://ctwavhiohhvfl" path="res://scener/player.tscn" id="2_b7msg"]
@@ -99,6 +99,43 @@ sources/0 = SubResource("TileSetAtlasSource_oq1qb")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_j47ci"]
 distance = -28.0
 
+[sub_resource type="Animation" id="Animation_gs3kt"]
+resource_name = "new_animation"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.98),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(313, -15), Vector2(370, -15)]
+}
+
+[sub_resource type="Animation" id="Animation_pubgr"]
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(380, -59), Vector2(440, -59)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aye50"]
+_data = {
+"RESET": SubResource("Animation_pubgr"),
+"new_animation": SubResource("Animation_gs3kt")
+}
+
 [node name="Node2D" type="Node2D"]
 
 [node name="background_ninja_red" type="TileMapLayer" parent="."]
@@ -116,7 +153,7 @@ tile_set = SubResource("TileSet_egv33")
 
 [node name="midground" type="TileMapLayer" parent="."]
 position = Vector2(33, 41)
-tile_map_data = PackedByteArray("AAA1AN//AAAMAAAAAAA2AN//AAAKAAAAAAA3AN//AAAIAAAAAAAHAP7/AAAMAAAAAAAJAP7/AAAKAAAAAAAIAP7/AAAKAAAAAAAKAP7/AAAIAAAAAAAGAP7/AAAAAAAAAAALAP7/AAAAAAAAAAAFAP7/AAAAAAAAAAAAAP7/AAAAAAAAAAD///7/AAAAAAAAAAAPAP7/AAAEAAAAAAA=")
+tile_map_data = PackedByteArray("AAA1AN//AAAMAAAAAAA2AN//AAAKAAAAAAA3AN//AAAIAAAAAAAHAP7/AAAMAAAAAAAJAP7/AAAKAAAAAAAIAP7/AAAKAAAAAAAKAP7/AAAIAAAAAAAGAP7/AAAAAAAAAAALAP7/AAAAAAAAAAAFAP7/AAAAAAAAAAAAAP7/AAAAAAAAAAD///7/AAAAAAAAAAAPAP7/AAAEAAAAAAAcAPj/AAAAAAAAAAAdAPj/AAAAAAAAAAAgAPX/AAAAAAAAAAAhAPX/AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_1kpi5")
 
 [node name="player" parent="." instance=ExtResource("2_b7msg")]
@@ -137,12 +174,24 @@ position = Vector2(3, 113)
 position = Vector2(108, 13)
 shape = SubResource("WorldBoundaryShape2D_j47ci")
 
+[node name="plattform" parent="." instance=ExtResource("7_ckiie")]
+position = Vector2(380, -59)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plattform"]
+libraries = {
+"": SubResource("AnimationLibrary_aye50")
+}
+autoplay = "new_animation"
+
+[node name="plattform3" parent="." instance=ExtResource("7_ckiie")]
+position = Vector2(380, -59)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plattform3"]
+libraries = {
+"": SubResource("AnimationLibrary_aye50")
+}
+autoplay = "RESET"
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Pause_meny" parent="CanvasLayer" instance=ExtResource("6_778u4")]
-
-[node name="plattform" parent="." instance=ExtResource("7_ckiie")]
-position = Vector2(367, -13)
-
-[node name="plattform2" parent="." instance=ExtResource("7_ckiie")]
-position = Vector2(449, -47)

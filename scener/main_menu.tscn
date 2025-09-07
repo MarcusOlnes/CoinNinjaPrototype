@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://c12vyxc0g15up"]
+[gd_scene load_steps=9 format=3 uid="uid://c12vyxc0g15up"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_x1rii"]
 [ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="2_ku14w"]
 [ext_resource type="Texture2D" uid="uid://cbn4qsmd1i6s8" path="res://assets/green2.png" id="2_rx5rl"]
-[ext_resource type="PackedScene" uid="uid://chxf3vawf62if" path="res://scener/drawing_pad.tscn" id="4_3pnj6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qulya"]
 texture = ExtResource("2_rx5rl")
@@ -140,14 +139,6 @@ offset_right = 742.0
 offset_bottom = 258.0
 theme_override_font_sizes/font_size = 17
 text = "Tip: Double jump for more height"
-
-[node name="drawing pad" parent="." instance=ExtResource("4_3pnj6")]
-visible = false
-
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-layout_mode = 0
-offset_right = 1154.0
-offset_bottom = 650.0
 
 [connection signal="pressed" from="VBoxContainer/LevelSelect3" to="." method="_on_level_select_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
