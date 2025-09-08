@@ -146,7 +146,7 @@ position = Vector2(1028, -15)
 position = Vector2(231, 77)
 
 [node name="plattform2" parent="." instance=ExtResource("7_pdlg6")]
-position = Vector2(440, 2)
+position = Vector2(1672, 52)
 
 [node name="coin4" parent="." instance=ExtResource("6_7jbsv")]
 position = Vector2(1320, 56)
@@ -184,5 +184,8 @@ collision_mask = 119
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
 position = Vector2(1496.5, -25.5)
 shape = SubResource("RectangleShape2D_6yddt")
+
+[node name="plattform9" parent="." instance=ExtResource("7_pdlg6")]
+position = Vector2(440, 7)
 
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
