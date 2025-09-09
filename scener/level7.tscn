@@ -158,6 +158,7 @@ position = Vector2(176, -96)
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(24, -16)
 zoom = Vector2(4, 4)
+limit_right = 1940
 limit_bottom = 90
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -187,8 +188,14 @@ position = Vector2(128, 6)
 collision_mask = 119
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2(1938.5, -288)
+position = Vector2(1968, -280)
 shape = SubResource("RectangleShape2D_v37s3")
+
+[node name="coin" parent="Portal" instance=ExtResource("9_oinm3")]
+position = Vector2(1912, -256)
+
+[node name="coin2" parent="Portal" instance=ExtResource("9_oinm3")]
+position = Vector2(1928, -256)
 
 [node name="coin" parent="." instance=ExtResource("9_oinm3")]
 position = Vector2(264, -88)
