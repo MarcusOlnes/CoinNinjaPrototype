@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwq44eva52qp4"]
+
+[ext_resource type="PackedScene" uid="uid://xws3b1mjnjdn" path="res://scener/blob.tscn" id="1_c3nii"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob4" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(286, 5)
+
+[node name="blob5" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(330, 5)
+
+[node name="blob6" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(376, 5)
+
+[node name="blob7" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(426, 5)
+
+[node name="blob8" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(470, 5)
+
+[node name="blob9" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(520, 5)
+
+[node name="blob10" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(564, 5)
+
+[node name="blob11" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(605, 5)
+
+[node name="blob12" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(646, 5)
+
+[node name="blob13" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(692, 6)
+
+[node name="blob14" parent="." instance=ExtResource("1_c3nii")]
+position = Vector2(736, 5)
+rotation = 6.28319
