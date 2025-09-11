@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://bptmo2wkx12pn"]
+[gd_scene load_steps=38 format=4 uid="uid://bptmo2wkx12pn"]
 
 [ext_resource type="Texture2D" uid="uid://fby6yul2imre" path="res://assets/sprites/bakgrunn.png" id="1_x1e6c"]
 [ext_resource type="Script" path="res://scripts/level_5.gd" id="1_x1pj3"]
@@ -455,13 +455,10 @@ libraries = {
 autoplay = "new_animation"
 
 [node name="plattform6" parent="." instance=ExtResource("10_3u67k")]
-position = Vector2(664, -32)
+position = Vector2(664, -56)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="plattform6"]
-libraries = {
-"": SubResource("AnimationLibrary_eal3r")
-}
-autoplay = "new_animation"
+[node name="plattform" parent="plattform6" instance=ExtResource("10_3u67k")]
+position = Vector2(72, 0)
 
 [node name="coin2" parent="." instance=ExtResource("7_4pt4o")]
 position = Vector2(312, 0)
