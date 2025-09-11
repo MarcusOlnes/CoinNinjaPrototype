@@ -82,6 +82,21 @@ texture = ExtResource("4_ifb8c")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_6c3ex")
 
+[sub_resource type="Animation" id="Animation_bwq22"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(253, 16)]
+}
+
 [sub_resource type="Animation" id="Animation_t0wj3"]
 resource_name = "new_animation"
 length = 3.0
@@ -97,21 +112,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(253, 16), Vector2(253, -237)]
-}
-
-[sub_resource type="Animation" id="Animation_bwq22"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(253, 16)]
 }
 
 [sub_resource type="Animation" id="Animation_sjpsr"]
@@ -138,6 +138,21 @@ _data = {
 "new_animation_2": SubResource("Animation_sjpsr")
 }
 
+[sub_resource type="Animation" id="Animation_7n0h3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(277, 16)]
+}
+
 [sub_resource type="Animation" id="Animation_dkhlm"]
 resource_name = "new_animation"
 length = 3.0
@@ -153,21 +168,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(277, 16), Vector2(277, -237)]
-}
-
-[sub_resource type="Animation" id="Animation_7n0h3"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(277, 16)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tlexq"]
@@ -275,7 +275,7 @@ position = Vector2(920, -96)
 position = Vector2(1024, -144)
 
 [node name="coin10" parent="." instance=ExtResource("9_mr40l")]
-position = Vector2(496, -216)
+position = Vector2(495, -209)
 
 [node name="Portal" type="Area2D" parent="."]
 collision_mask = 119
@@ -283,5 +283,23 @@ collision_mask = 119
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
 position = Vector2(1344, -152)
 shape = SubResource("RectangleShape2D_dxcdc")
+
+[node name="coin11" parent="." instance=ExtResource("9_mr40l")]
+position = Vector2(474, -241)
+
+[node name="coin12" parent="." instance=ExtResource("9_mr40l")]
+position = Vector2(484, -226)
+
+[node name="coin13" parent="." instance=ExtResource("9_mr40l")]
+position = Vector2(536, -206)
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 351.0
+offset_top = -309.0
+offset_right = 517.0
+offset_bottom = -286.0
+theme_override_fonts/font = ExtResource("8_7d6ot")
+theme_override_font_sizes/font_size = 8
+text = "Let yourself fall before you jump!"
 
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]

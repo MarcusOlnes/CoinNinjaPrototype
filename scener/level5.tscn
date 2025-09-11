@@ -310,44 +310,6 @@ _data = {
 "new_animation": SubResource("Animation_xmhp0")
 }
 
-[sub_resource type="Animation" id="Animation_mqx3m"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(664, -32)]
-}
-
-[sub_resource type="Animation" id="Animation_86w34"]
-resource_name = "new_animation"
-length = 1.5
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(664, -32), Vector2(776, -32)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_eal3r"]
-_data = {
-"RESET": SubResource("Animation_mqx3m"),
-"new_animation": SubResource("Animation_86w34")
-}
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5wqd"]
 size = Vector2(97, 120)
 
@@ -511,5 +473,32 @@ collision_mask = 119
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
 position = Vector2(1616, -160)
 shape = SubResource("RectangleShape2D_m5wqd")
+
+[node name="coin13" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1112, -64)
+
+[node name="coin18" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1032, -120)
+
+[node name="coin19" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(984, -72)
+
+[node name="coin20" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1240, -96)
+
+[node name="coin21" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1160, -112)
+
+[node name="coin22" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1320, -112)
+
+[node name="coin23" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1368, -160)
+
+[node name="coin24" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1448, -80)
+
+[node name="coin25" parent="." instance=ExtResource("7_4pt4o")]
+position = Vector2(1448, -96)
 
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
