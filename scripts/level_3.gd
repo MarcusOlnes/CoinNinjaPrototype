@@ -5,7 +5,7 @@ var level := 3
 var neste_level_tall := level + 1
 var neste_level_navn := "res://scener/level%d.tscn" % neste_level_tall
 func _ready():
-	Level_selection.level2_fullført=true
+	Global.level2_fullført=1
 func _on_portal_body_entered(body: Node2D):
 	if body is Player:
 		print("spiller i kollisjonssonen")

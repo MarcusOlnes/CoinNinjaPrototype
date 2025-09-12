@@ -13,7 +13,7 @@ resource_name = "level12.tscn"
 script/source = "extends Node2D
 
 func _ready():
-	Level_selection.level11_fullført=true
+	Global.level11_fullført=1
 
 func _on_portal_body_entered(body: Node2D) -> void:
 		if body is Player:
