@@ -96,6 +96,22 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_lds6h")
 text = "Level Select
 "
 
+[node name="Store" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2mqy0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5y28i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsv04")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lds6h")
+text = "Store
+"
+
 [node name="Exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -141,4 +157,5 @@ theme_override_font_sizes/font_size = 17
 text = "Tip: Double jump for more height"
 
 [connection signal="pressed" from="VBoxContainer/LevelSelect3" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="VBoxContainer/Store" to="." method="_on_store_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

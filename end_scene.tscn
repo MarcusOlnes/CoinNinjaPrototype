@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://cwpkenpjql738"]
+[gd_scene load_steps=16 format=4 uid="uid://cwpkenpjql738"]
 
 [ext_resource type="Texture2D" uid="uid://fby6yul2imre" path="res://assets/sprites/bakgrunn.png" id="1_1xivk"]
+[ext_resource type="Script" path="res://scripts/end_scene.gd" id="1_rlvsb"]
 [ext_resource type="Texture2D" uid="uid://bsh1i6l2v62bi" path="res://assets/sprites/spritesheet 4.png" id="2_sx6fg"]
 [ext_resource type="Texture2D" uid="uid://disaufjsk43ya" path="res://assets/sprites/spritesheet 6.png" id="2_xroe5"]
 [ext_resource type="PackedScene" uid="uid://ctwavhiohhvfl" path="res://scener/player.tscn" id="3_kowb5"]
@@ -80,6 +81,7 @@ sources/0 = SubResource("TileSetAtlasSource_b81s0")
 distance = 38.0
 
 [node name="end_scene" type="Node2D"]
+script = ExtResource("1_rlvsb")
 
 [node name="background_ninja_red" type="TileMapLayer" parent="."]
 position = Vector2(32, -68)

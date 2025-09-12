@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=3 uid="uid://cfeg6qvbk2eiy"]
+
+[ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="1_ejrto"]
+[ext_resource type="Script" path="res://scripts/store.gd" id="1_pelcm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dc1lv"]
+bg_color = Color(3.15858e-06, 0.31139, 0.0430011, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mevnt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2xq2j"]
+bg_color = Color(0.712129, 0.712129, 0.712129, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n1hh7"]
+bg_color = Color(0.544974, 0.544974, 0.544974, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vm1cf"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pelcm")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.057
+anchor_bottom = 1.0
+offset_left = -42.0
+offset_top = -38.0
+offset_right = 42.3359
+offset_bottom = 46.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dc1lv")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -451.0
+offset_top = -72.0
+offset_right = 451.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_ejrto")
+theme_override_font_sizes/font_size = 128
+text = "Coming soon...
+"
+
+[node name="Back2Main" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -141.0
+offset_top = -176.0
+offset_right = 141.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mevnt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2xq2j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n1hh7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vm1cf")
+text = "Main Menu"
+
+[connection signal="pressed" from="Back2Main" to="." method="_on_back_2_main_pressed"]

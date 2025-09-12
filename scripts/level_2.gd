@@ -3,10 +3,7 @@ extends Node2D
 @onready var SceneBytte = $SceneFader/AnimationPlayer
 
 func _ready():
-	print("Setter level1 til complete, ved overgang til level2")
 	Global.level1_fullført = 1
-	print("level1_fullført status: ", Global.level1_fullført)
-	
 
 var level := 2
 var neste_level_tall := level + 1
