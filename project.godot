@@ -19,6 +19,7 @@ config/icon="res://assets/sprites/Running_Ninj6.png"
 [autoload]
 
 GameManager="*res://scener/game_manager.tscn"
+Level_selection="*res://scener/level_selection.tscn"
 
 [display]
 

@@ -1,0 +1,113 @@
+[gd_scene load_steps=9 format=3 uid="uid://dnjmqajqpby5c"]
+
+[ext_resource type="FontFile" uid="uid://d4bduu650o3tq" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="1_1tb6m"]
+[ext_resource type="Script" path="res://scripts/stats_2.gd" id="2_hs6ti"]
+
+[sub_resource type="GDScript" id="GDScript_pmqfm"]
+resource_name = "not_completed"
+script/source = "extends Control
+
+
+var er_pauset:bool = false: 
+	set = set_pauset 
+
+func set_pauset(verdi:bool) ->void:
+	er_pauset=verdi
+	get_tree().paused = er_pauset
+	visible = er_pauset
+	
+func _on_resume_button_pressed():
+	er_pauset=false
+"
+
+[sub_resource type="Theme" id="Theme_5fio6"]
+default_font = ExtResource("1_1tb6m")
+default_font_size = 33
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g8bx5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nou6"]
+bg_color = Color(0.629675, 0.629675, 0.629675, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3jgy"]
+bg_color = Color(0.466181, 0.466181, 0.466181, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qs4ol"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[node name="Control" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_pmqfm")
+
+[node name="bakgrunn (colorrect)" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.196078, 0.196078, 0.196078, 0.639216)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+z_index = 2
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_5fio6")
+theme_override_constants/separation = 14
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Complete previous levels!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="resumeButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g8bx5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7nou6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c3jgy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qs4ol")
+text = "Resume"
+script = ExtResource("2_hs6ti")
