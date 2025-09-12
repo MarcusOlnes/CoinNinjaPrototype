@@ -13,5 +13,4 @@ func _on_portal_body_entered(body: Node2D) -> void:
 		print("spiller i kollisjonssonen")
 		GameManager.tot_coins+=GameManager.coins
 		GameManager.coins=0
-		Level_selection.level6_fullført=true
 		get_tree().change_scene_to_file(neste_level_navn)
