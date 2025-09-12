@@ -129,4 +129,5 @@ theme_override_fonts/font = ExtResource("6_xscxm")
 theme_override_font_sizes/font_size = 8
 text = "Prototype completed!!! Let me know what you think! 
 Send screenshot of completed level to: mbolnes@gmail.com
-Congrats on finishing the game!"
+Congrats on finishing the game!
+Press esc to quit!"

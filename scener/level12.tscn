@@ -117,4 +117,13 @@ scale = Vector2(-1, 1)
 position = Vector2(331, 20)
 scale = Vector2(-1, 1)
 
+[node name="Label2" type="Label" parent="."]
+offset_left = 1744.0
+offset_top = -256.0
+offset_right = 1955.0
+offset_bottom = -233.0
+theme_override_fonts/font = ExtResource("6_vy6xa")
+theme_override_font_sizes/font_size = 8
+text = "Thank you for playing <3"
+
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]

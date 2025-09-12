@@ -169,6 +169,7 @@ position = Vector2(184, -24)
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(24, -16)
 zoom = Vector2(4, 4)
+limit_left = 64
 limit_right = 1489
 limit_bottom = 90
 limit_smoothed = true
