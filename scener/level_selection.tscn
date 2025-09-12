@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dnftmyo5ibus"]
+[gd_scene load_steps=23 format=3 uid="uid://dnftmyo5ibus"]
 
 [ext_resource type="Script" path="res://scripts/level_selection.gd" id="1_aehhf"]
 [ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="1_nvuu3"]
@@ -9,6 +9,33 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vy6nu"]
 texture = ExtResource("2_0ttma")
 modulate_color = Color(0.470076, 0.470076, 0.470076, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7dnxo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccutm"]
+bg_color = Color(0.712129, 0.712129, 0.712129, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oegjj"]
+bg_color = Color(0.544974, 0.544974, 0.544974, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sqnf2"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bt7wd"]
 
@@ -39,6 +66,35 @@ corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3.5)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rjgcx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_82nxu"]
+bg_color = Color(0.669646, 0.155541, 0.0903416, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rw5mk"]
+bg_color = Color(0.544218, 0.117939, 0.0639442, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b2qye"]
+bg_color = Color(0.81443, 0.206323, 0.128637, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtv48"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2vhso"]
@@ -49,33 +105,6 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3.5)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7dnxo"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccutm"]
-bg_color = Color(0.712129, 0.712129, 0.712129, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.5)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oegjj"]
-bg_color = Color(0.544974, 0.544974, 0.544974, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.5)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sqnf2"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrdvp"]
 bg_color = Color(0.00765705, 0.0211931, 0.021289, 0.886275)
@@ -121,86 +150,7 @@ theme_override_fonts/font = ExtResource("1_nvuu3")
 theme_override_font_sizes/font_size = 60
 text = "Level Selection"
 
-[node name="Stats" type="Button" parent="."]
-layout_mode = 0
-offset_left = 78.0
-offset_top = 208.0
-offset_right = 274.0
-offset_bottom = 322.0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
-theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
-text = "1"
-
-[node name="stats1_green2" type="Button" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 78.0
-offset_top = 206.0
-offset_right = 274.0
-offset_bottom = 320.0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
-theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
-text = "1"
-
-[node name="Stats2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 344.0
-offset_top = 208.0
-offset_right = 540.0
-offset_bottom = 322.0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
-theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
-text = "2"
-script = ExtResource("4_rpa2k")
-
-[node name="Stats3" type="Button" parent="."]
-layout_mode = 0
-offset_left = 604.0
-offset_top = 208.0
-offset_right = 800.0
-offset_bottom = 322.0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
-theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
-text = "3"
-
 [node name="Back2Main" type="Button" parent="."]
-layout_mode = 0
 offset_left = 30.0
 offset_top = 46.0
 offset_right = 146.0
@@ -217,12 +167,68 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_oegjj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_sqnf2")
 text = "Main Menu"
 
-[node name="Stats4" type="Button" parent="."]
-layout_mode = 0
-offset_left = 872.0
-offset_top = 208.0
-offset_right = 1068.0
-offset_bottom = 322.0
+[node name="hvite knapper" type="Node" parent="."]
+
+[node name="Stats" type="Button" parent="hvite knapper"]
+offset_left = 80.0
+offset_top = 202.0
+offset_right = 276.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "1"
+
+[node name="Stats2" type="Button" parent="hvite knapper"]
+offset_left = 346.0
+offset_top = 202.0
+offset_right = 542.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "2"
+script = ExtResource("4_rpa2k")
+
+[node name="Stats3" type="Button" parent="hvite knapper"]
+offset_left = 606.0
+offset_top = 202.0
+offset_right = 802.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
+text = "3"
+
+[node name="Stats4" type="Button" parent="hvite knapper"]
+offset_left = 874.0
+offset_top = 202.0
+offset_right = 1070.0
+offset_bottom = 316.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -236,12 +242,11 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "4"
 
-[node name="Stats5" type="Button" parent="."]
-layout_mode = 0
-offset_left = 78.0
-offset_top = 350.0
-offset_right = 274.0
-offset_bottom = 464.0
+[node name="Stats5" type="Button" parent="hvite knapper"]
+offset_left = 80.0
+offset_top = 344.0
+offset_right = 276.0
+offset_bottom = 458.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -256,12 +261,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "5"
 script = ExtResource("4_rpa2k")
 
-[node name="Stats6" type="Button" parent="."]
-layout_mode = 0
-offset_left = 344.0
-offset_top = 350.0
-offset_right = 540.0
-offset_bottom = 464.0
+[node name="Stats6" type="Button" parent="hvite knapper"]
+offset_left = 346.0
+offset_top = 344.0
+offset_right = 542.0
+offset_bottom = 458.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -275,12 +279,11 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "6"
 
-[node name="Stats7" type="Button" parent="."]
-layout_mode = 0
-offset_left = 604.0
-offset_top = 350.0
-offset_right = 800.0
-offset_bottom = 464.0
+[node name="Stats7" type="Button" parent="hvite knapper"]
+offset_left = 606.0
+offset_top = 344.0
+offset_right = 802.0
+offset_bottom = 458.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -294,32 +297,11 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "7"
 
-[node name="stats7_green" type="Button" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 604.0
-offset_top = 350.0
-offset_right = 800.0
-offset_bottom = 464.0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
-theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
-text = "7"
-
-[node name="Stats8" type="Button" parent="."]
-layout_mode = 0
-offset_left = 872.0
-offset_top = 350.0
-offset_right = 1068.0
-offset_bottom = 464.0
+[node name="Stats8" type="Button" parent="hvite knapper"]
+offset_left = 874.0
+offset_top = 344.0
+offset_right = 1070.0
+offset_bottom = 458.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -334,12 +316,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "8"
 script = ExtResource("4_rpa2k")
 
-[node name="Stats9" type="Button" parent="."]
-layout_mode = 0
-offset_left = 78.0
-offset_top = 494.0
-offset_right = 274.0
-offset_bottom = 608.0
+[node name="Stats9" type="Button" parent="hvite knapper"]
+offset_left = 80.0
+offset_top = 488.0
+offset_right = 276.0
+offset_bottom = 602.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -353,12 +334,11 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "9"
 
-[node name="Stats10" type="Button" parent="."]
-layout_mode = 0
-offset_left = 344.0
-offset_top = 494.0
-offset_right = 540.0
-offset_bottom = 608.0
+[node name="Stats10" type="Button" parent="hvite knapper"]
+offset_left = 346.0
+offset_top = 488.0
+offset_right = 542.0
+offset_bottom = 602.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -372,12 +352,11 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "10"
 
-[node name="Stats11" type="Button" parent="."]
-layout_mode = 0
-offset_left = 604.0
-offset_top = 494.0
-offset_right = 800.0
-offset_bottom = 608.0
+[node name="Stats11" type="Button" parent="hvite knapper"]
+offset_left = 606.0
+offset_top = 488.0
+offset_right = 802.0
+offset_bottom = 602.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -392,12 +371,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "11"
 script = ExtResource("4_rpa2k")
 
-[node name="Stats12" type="Button" parent="."]
-layout_mode = 0
-offset_left = 872.0
-offset_top = 494.0
-offset_right = 1068.0
-offset_bottom = 608.0
+[node name="Stats12" type="Button" parent="hvite knapper"]
+offset_left = 874.0
+offset_top = 488.0
+offset_right = 1070.0
+offset_bottom = 602.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -411,19 +389,456 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "12"
 
-[node name="Panel2" type="Panel" parent="."]
+[node name="rød knapper" type="Node" parent="."]
+
+[node name="rød_2" type="Button" parent="rød knapper"]
+offset_left = 346.0
+offset_top = 202.0
+offset_right = 542.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "2"
+
+[node name="rød_3" type="Button" parent="rød knapper"]
+offset_left = 606.0
+offset_top = 202.0
+offset_right = 802.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "3"
+
+[node name="rød_4" type="Button" parent="rød knapper"]
+offset_left = 874.0
+offset_top = 202.0
+offset_right = 1070.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "4
+"
+
+[node name="rød_5" type="Button" parent="rød knapper"]
+offset_left = 80.0
+offset_top = 343.0
+offset_right = 276.0
+offset_bottom = 457.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "5"
+
+[node name="rød_6" type="Button" parent="rød knapper"]
+offset_left = 346.0
+offset_top = 344.0
+offset_right = 542.0
+offset_bottom = 458.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "6"
+
+[node name="rød_7" type="Button" parent="rød knapper"]
+offset_left = 605.0
+offset_top = 344.0
+offset_right = 801.0
+offset_bottom = 458.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "7
+"
+
+[node name="rød_8" type="Button" parent="rød knapper"]
+offset_left = 873.0
+offset_top = 343.0
+offset_right = 1069.0
+offset_bottom = 457.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "8
+"
+
+[node name="rød_9" type="Button" parent="rød knapper"]
+offset_left = 81.0
+offset_top = 486.0
+offset_right = 277.0
+offset_bottom = 600.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "9"
+
+[node name="rød_10" type="Button" parent="rød knapper"]
+offset_left = 347.0
+offset_top = 487.0
+offset_right = 543.0
+offset_bottom = 601.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "10"
+
+[node name="rød_11" type="Button" parent="rød knapper"]
+offset_left = 606.0
+offset_top = 487.0
+offset_right = 802.0
+offset_bottom = 601.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "11
+"
+
+[node name="rød_12" type="Button" parent="rød knapper"]
+offset_left = 874.0
+offset_top = 487.0
+offset_right = 1070.0
+offset_bottom = 601.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjgcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82nxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rw5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b2qye")
+text = "12
+"
+
+[node name="grønne knapper" type="Node" parent="."]
+
+[node name="grønn1" type="Button" parent="grønne knapper"]
 visible = false
-layout_mode = 1
+offset_left = 80.0
+offset_top = 200.0
+offset_right = 276.0
+offset_bottom = 314.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "1"
+
+[node name="grønn2" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 347.0
+offset_top = 201.0
+offset_right = 543.0
+offset_bottom = 315.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "2"
+
+[node name="grønn3" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 606.0
+offset_top = 202.0
+offset_right = 802.0
+offset_bottom = 316.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "3"
+
+[node name="grønn4" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 874.0
+offset_top = 201.0
+offset_right = 1070.0
+offset_bottom = 315.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "4"
+
+[node name="grønn5" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 80.0
+offset_top = 343.0
+offset_right = 276.0
+offset_bottom = 457.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "5
+"
+
+[node name="grønn6" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 346.0
+offset_top = 342.0
+offset_right = 542.0
+offset_bottom = 456.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "6"
+
+[node name="grønn7" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 606.0
+offset_top = 344.0
+offset_right = 802.0
+offset_bottom = 458.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "7"
+
+[node name="grønn8" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 874.0
+offset_top = 342.0
+offset_right = 1070.0
+offset_bottom = 456.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "8
+"
+
+[node name="grønn9" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 79.0
+offset_top = 485.0
+offset_right = 275.0
+offset_bottom = 599.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "8
+"
+
+[node name="grønn10" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 346.0
+offset_top = 488.0
+offset_right = 542.0
+offset_bottom = 602.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "10"
+
+[node name="grønn11" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 606.0
+offset_top = 486.0
+offset_right = 802.0
+offset_bottom = 600.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "11"
+
+[node name="grønn12" type="Button" parent="grønne knapper"]
+visible = false
+offset_left = 875.0
+offset_top = 483.0
+offset_right = 1071.0
+offset_bottom = 597.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rtv48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2vhso")
+text = "12"
+
+[node name="Panel2" type="Panel" parent="grønne knapper"]
+visible = false
 anchors_preset = -1
 anchor_right = 0.637
 anchor_bottom = 0.836
-offset_left = -26.0
-offset_top = -10.0
-offset_right = 416.176
-offset_bottom = 104.272
+offset_left = -24.0
+offset_top = -16.0
+offset_right = 418.176
+offset_bottom = 98.272
 theme_override_styles/panel = SubResource("StyleBoxFlat_nrdvp")
 
-[node name="inni" type="Panel" parent="Panel2"]
+[node name="inni" type="Panel" parent="grønne knapper/Panel2"]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 120.0
@@ -431,7 +846,7 @@ offset_right = 944.0
 offset_bottom = 544.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_42lbn")
 
-[node name="Label" type="Label" parent="Panel2"]
+[node name="Label" type="Label" parent="grønne knapper/Panel2"]
 layout_mode = 0
 offset_left = 240.0
 offset_top = 176.0
@@ -442,7 +857,7 @@ theme_override_fonts/font = ExtResource("5_b2e58")
 theme_override_font_sizes/font_size = 43
 text = "Complete previous levels!"
 
-[node name="not_complete" type="Button" parent="Panel2"]
+[node name="not_complete" type="Button" parent="grønne knapper/Panel2"]
 offset_left = 280.0
 offset_top = 288.0
 offset_right = 858.0
@@ -461,20 +876,41 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "Back to level selection!"
 
-[connection signal="pressed" from="Stats" to="." method="_on_stats_pressed"]
-[connection signal="pressed" from="stats1_green2" to="." method="_on_stats_1_green_2_pressed"]
-[connection signal="pressed" from="Stats2" to="." method="_on_stats_2_pressed"]
-[connection signal="pressed" from="Stats3" to="." method="_on_stats_3_pressed"]
 [connection signal="pressed" from="Back2Main" to="." method="_on_back_2_main_pressed"]
-[connection signal="pressed" from="Stats4" to="." method="_on_stats_4_pressed"]
-[connection signal="pressed" from="Stats5" to="." method="_on_stats_5_pressed"]
-[connection signal="pressed" from="Stats6" to="." method="_on_stats_6_pressed"]
-[connection signal="pressed" from="Stats7" to="." method="_on_stats_7_pressed"]
-[connection signal="pressed" from="stats7_green" to="." method="_on_stats_7_pressed"]
-[connection signal="pressed" from="Stats8" to="." method="_on_stats_8_pressed"]
-[connection signal="pressed" from="Stats9" to="." method="_on_stats_9_pressed"]
-[connection signal="pressed" from="Stats10" to="." method="_on_stats_10_pressed"]
-[connection signal="pressed" from="Stats11" to="." method="_on_stats_11_pressed"]
-[connection signal="pressed" from="Stats12" to="." method="_on_stats_12_pressed"]
-[connection signal="visibility_changed" from="Panel2" to="." method="_on_panel_2_visibility_changed"]
-[connection signal="pressed" from="Panel2/not_complete" to="." method="_on_not_complete_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats" to="." method="_on_stats_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats2" to="." method="_on_stats_2_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats3" to="." method="_on_stats_3_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats4" to="." method="_on_stats_4_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats5" to="." method="_on_stats_5_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats6" to="." method="_on_stats_6_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats7" to="." method="_on_stats_7_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats8" to="." method="_on_stats_8_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats9" to="." method="_on_stats_9_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats10" to="." method="_on_stats_10_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats11" to="." method="_on_stats_11_pressed"]
+[connection signal="pressed" from="hvite knapper/Stats12" to="." method="_on_stats_12_pressed"]
+[connection signal="pressed" from="rød knapper/rød_2" to="." method="_on_rød_2_pressed"]
+[connection signal="pressed" from="rød knapper/rød_3" to="." method="_on_rød_3_pressed"]
+[connection signal="pressed" from="rød knapper/rød_4" to="." method="_on_rød_4_pressed"]
+[connection signal="pressed" from="rød knapper/rød_5" to="." method="_on_rød_5_pressed"]
+[connection signal="pressed" from="rød knapper/rød_6" to="." method="_on_rød_6_pressed"]
+[connection signal="pressed" from="rød knapper/rød_7" to="." method="_on_rød_7_pressed"]
+[connection signal="pressed" from="rød knapper/rød_8" to="." method="_on_rød_8_pressed"]
+[connection signal="pressed" from="rød knapper/rød_9" to="." method="_on_rød_9_pressed"]
+[connection signal="pressed" from="rød knapper/rød_10" to="." method="_on_rød_10_pressed"]
+[connection signal="pressed" from="rød knapper/rød_11" to="." method="_on_rød_11_pressed"]
+[connection signal="pressed" from="rød knapper/rød_12" to="." method="_on_rød_12_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn1" to="." method="_on_grønn_1_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn2" to="." method="_on_grønn_2_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn3" to="." method="_on_grønn_3_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn4" to="." method="_on_grønn_4_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn5" to="." method="_on_grønn_5_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn6" to="." method="_on_grønn_6_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn7" to="." method="_on_grønn_7_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn8" to="." method="_on_grønn_8_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn9" to="." method="_on_grønn_9_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn10" to="." method="_on_grønn_10_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn11" to="." method="_on_grønn_11_pressed"]
+[connection signal="pressed" from="grønne knapper/grønn12" to="." method="_on_grønn_12_pressed"]
+[connection signal="visibility_changed" from="grønne knapper/Panel2" to="." method="_on_panel_2_visibility_changed"]
+[connection signal="pressed" from="grønne knapper/Panel2/not_complete" to="." method="_on_not_complete_pressed"]
