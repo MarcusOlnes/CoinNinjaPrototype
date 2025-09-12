@@ -23,13 +23,13 @@ func _on_stats_2_pressed():
 	
 
 func _on_stats_3_pressed():
-	if Global.level2_fullført:
+	if Global.level2_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level3.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 
 func _on_stats_4_pressed() :
-	if Global.level3_fullført==true:
+	if Global.level3_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level4.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
@@ -37,49 +37,49 @@ func _on_stats_4_pressed() :
 	
 
 func _on_stats_5_pressed() :
-	if Global.level4_fullført:
+	if Global.level4_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level5.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 	
 func _on_stats_6_pressed():
-	if Global.level5_fullført:
+	if Global.level5_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level6.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 
 func _on_stats_7_pressed():
-	if Global.level6_fullført:
+	if Global.level6_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level7.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 
 func _on_stats_8_pressed():
-	if Global.level7_fullført:
+	if Global.level7_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level8.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 
 func _on_stats_9_pressed():
-	if Global.level8_fullført:
+	if Global.level8_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level9.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 	
 func _on_stats_10_pressed() :
-	if Global.level9_fullført:
+	if Global.level9_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level10.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 	
 func _on_stats_11_pressed():
-	if Global.level10_fullført:
+	if Global.level10_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level11.tscn")
 	else:
 		panelMedUferdig.set_visible(true)
 	
 func _on_stats_12_pressed():
-	if Global.level11_fullført:
+	if Global.level11_fullført>0:
 		get_tree().change_scene_to_file("res://scener/level12.tscn")
 	else:
 		panelMedUferdig.set_visible(true)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dnjmqajqpby5c"]
+[gd_scene load_steps=9 format=3 uid="uid://kelrm5hpxcdg"]
 
 [ext_resource type="FontFile" uid="uid://d4bduu650o3tq" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="1_1tb6m"]
 [ext_resource type="Script" path="res://scripts/stats_2.gd" id="2_hs6ti"]

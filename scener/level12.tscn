@@ -1,5 +1,6 @@
 [gd_scene load_steps=15 format=4 uid="uid://u176etg2ibkf"]
 
+[ext_resource type="Script" path="res://scripts/level_12.gd" id="1_s0ums"]
 [ext_resource type="Texture2D" uid="uid://fby6yul2imre" path="res://assets/sprites/bakgrunn.png" id="1_x3e7x"]
 [ext_resource type="PackedScene" uid="uid://ctwavhiohhvfl" path="res://scener/player.tscn" id="2_6mupw"]
 [ext_resource type="PackedScene" uid="uid://b1e57xksn3wv1" path="res://scener/killzone.tscn" id="3_eapw8"]
@@ -7,21 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://pge6qns5t5xv" path="res://scener/pause_meny.tscn" id="5_g0cjk"]
 [ext_resource type="FontFile" uid="uid://dapa7n7sjqka4" path="res://assets/Minecraftia-Regular.ttf" id="6_vy6xa"]
 [ext_resource type="PackedScene" uid="uid://k24b2irblf5b" path="res://scener/blob_2.tscn" id="7_wxdf3"]
-
-[sub_resource type="GDScript" id="GDScript_njoqi"]
-resource_name = "level12.tscn"
-script/source = "extends Node2D
-
-func _ready():
-	Global.level11_fullført=1
-
-func _on_portal_body_entered(body: Node2D) -> void:
-		if body is Player:
-			print(\"spiller i kollisjonssonen\")
-			GameManager.tot_coins+=GameManager.coins
-			GameManager.coins=0
-			get_tree().change_scene_to_file(\"res://end_scene.tscn\")
-"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lwemf"]
 texture = ExtResource("1_x3e7x")
@@ -71,7 +57,7 @@ distance = 38.0
 size = Vector2(48.5, 100)
 
 [node name="Node2D" type="Node2D"]
-script = SubResource("GDScript_njoqi")
+script = ExtResource("1_s0ums")
 
 [node name="background_ninja_red" type="TileMapLayer" parent="."]
 position = Vector2(32, -68)
