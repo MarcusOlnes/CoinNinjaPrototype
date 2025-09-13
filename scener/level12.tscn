@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://u176etg2ibkf"]
+[gd_scene load_steps=16 format=4 uid="uid://u176etg2ibkf"]
 
 [ext_resource type="Script" path="res://scripts/level_12.gd" id="1_s0ums"]
 [ext_resource type="Texture2D" uid="uid://fby6yul2imre" path="res://assets/sprites/bakgrunn.png" id="1_x3e7x"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://pge6qns5t5xv" path="res://scener/pause_meny.tscn" id="5_g0cjk"]
 [ext_resource type="FontFile" uid="uid://dapa7n7sjqka4" path="res://assets/Minecraftia-Regular.ttf" id="6_vy6xa"]
 [ext_resource type="PackedScene" uid="uid://k24b2irblf5b" path="res://scener/blob_2.tscn" id="7_wxdf3"]
+[ext_resource type="PackedScene" uid="uid://bcyfrder035cm" path="res://scener/coin.tscn" id="9_eeuho"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lwemf"]
 texture = ExtResource("1_x3e7x")
@@ -106,7 +107,7 @@ text = "So you made it to the end..."
 collision_mask = 119
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2(1898, -248)
+position = Vector2(1896, -232)
 shape = SubResource("RectangleShape2D_bxvw5")
 
 [node name="blob2" parent="." instance=ExtResource("7_wxdf3")]
@@ -125,5 +126,74 @@ offset_bottom = -233.0
 theme_override_fonts/font = ExtResource("6_vy6xa")
 theme_override_font_sizes/font_size = 8
 text = "Thank you for playing <3"
+
+[node name="coin" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(456, -56)
+
+[node name="coin2" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(568, -160)
+
+[node name="coin3" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(568, -224)
+
+[node name="coin4" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(776, -192)
+
+[node name="coin5" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(824, -144)
+
+[node name="coin6" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(872, -96)
+
+[node name="coin7" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(952, -48)
+
+[node name="coin8" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1128, -16)
+
+[node name="coin9" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1144, -72)
+
+[node name="coin10" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1144, -136)
+
+[node name="coin11" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1112, -72)
+
+[node name="coin12" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1112, -136)
+
+[node name="coin13" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1112, -200)
+
+[node name="coin14" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1144, -200)
+
+[node name="coin15" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1112, -264)
+
+[node name="coin16" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1144, -264)
+
+[node name="coin17" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1344, -320)
+
+[node name="coin18" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1464, -280)
+
+[node name="coin19" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1608, -256)
+
+[node name="coin20" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1752, -232)
+
+[node name="coin21" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1864, -208)
+
+[node name="coin22" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1848, -208)
+
+[node name="coin23" parent="." instance=ExtResource("9_eeuho")]
+position = Vector2(1832, -208)
 
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
