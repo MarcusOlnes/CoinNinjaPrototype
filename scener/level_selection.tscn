@@ -991,7 +991,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "1"
+text = "5"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull5"]
 layout_mode = 0
@@ -1020,7 +1020,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "2"
+text = "6"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull6"]
 layout_mode = 0
@@ -1049,7 +1049,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "3"
+text = "7"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull7"]
 layout_mode = 0
@@ -1078,7 +1078,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "4"
+text = "8"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull8"]
 layout_mode = 0
@@ -1107,7 +1107,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "1"
+text = "9"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull9"]
 layout_mode = 0
@@ -1136,7 +1136,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "2"
+text = "10"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull10"]
 layout_mode = 0
@@ -1165,7 +1165,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "3"
+text = "11"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull11"]
 layout_mode = 0
@@ -1194,7 +1194,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w2ub0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3an3l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oha3d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bdsrh")
-text = "4"
+text = "12"
 
 [node name="gull1_label" type="Label" parent="gullknapper/gull12"]
 layout_mode = 0

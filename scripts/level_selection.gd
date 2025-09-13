@@ -140,17 +140,12 @@ func _ready():
 			gull12.visible=true
 			grønn12.visible=false
 			
-		
-	
 func _on_level_select_pressed():
 	get_tree().change_scene_to_file("res://scener/level1.tscn")
 func _on_back_2_main_pressed():
 	get_tree().change_scene_to_file("res://scener/main_menu.tscn")
-
-
 #-------------------------------------------------------------------------------
 #FUNKSJONER FOR DE HVITE KNAPPENE - SCENENYTTE TIL TILHØRENDE LEVLER
-
 func _on_stats_pressed():
 	get_tree().change_scene_to_file("res://scener/level1.tscn")
 func _on_stats_2_pressed():
