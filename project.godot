@@ -21,6 +21,7 @@ config/icon="res://assets/sprites/Running_Ninj6.png"
 GameManager="*res://scener/game_manager.tscn"
 Level_selection="*res://scener/level_selection.tscn"
 Global="*res://scripts/global.gd"
+game_music="*res://scener/game_music.tscn"
 
 [display]
 

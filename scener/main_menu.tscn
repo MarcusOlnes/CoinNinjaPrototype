@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_x1rii"]
 [ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="2_ku14w"]
-[ext_resource type="Texture2D" uid="uid://cbn4qsmd1i6s8" path="res://assets/green2.png" id="2_rx5rl"]
+[ext_resource type="Texture2D" uid="uid://2kgc15ykpghv" path="res://assets/green2.png" id="2_rogwu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qulya"]
-texture = ExtResource("2_rx5rl")
+texture = ExtResource("2_rogwu")
 modulate_color = Color(0.597176, 0.597176, 0.597176, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2mqy0"]
@@ -56,7 +56,6 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_qulya")
 
 [node name="Panel2" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
