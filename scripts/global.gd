@@ -37,5 +37,5 @@ var coins_completed_level7 = false
 var coins_completed_level8 = false
 var coins_completed_level9 = false
 var coins_completed_level10 = false
-var coins_completed_level111 = false
+var coins_completed_level11 = false
 var coins_completed_level12 = false
