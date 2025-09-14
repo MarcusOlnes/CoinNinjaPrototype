@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://dnftmyo5ibus"]
+[gd_scene load_steps=53 format=3 uid="uid://dnftmyo5ibus"]
 
 [ext_resource type="Script" path="res://scripts/level_selection.gd" id="1_aehhf"]
 [ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="1_nvuu3"]
@@ -356,6 +356,24 @@ bg_color = Color(0.00765705, 0.0211931, 0.021289, 0.886275)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42lbn"]
 bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbf3p"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53f6a"]
+bg_color = Color(0.581033, 0.581033, 0.581033, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
 
 [node name="level_selection" type="Control"]
 layout_mode = 3
@@ -1479,8 +1497,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_b2e58")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kbf3p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_53f6a")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "Back to level selection!"
 
