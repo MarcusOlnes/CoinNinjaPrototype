@@ -107,7 +107,7 @@ text = "So you made it to the end..."
 collision_mask = 119
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2(1896, -232)
+position = Vector2(1896, -248)
 shape = SubResource("RectangleShape2D_bxvw5")
 
 [node name="blob2" parent="." instance=ExtResource("7_wxdf3")]
