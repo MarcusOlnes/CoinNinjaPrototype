@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dnftmyo5ibus"]
+[gd_scene load_steps=51 format=3 uid="uid://dnftmyo5ibus"]
 
 [ext_resource type="Script" path="res://scripts/level_selection.gd" id="1_aehhf"]
 [ext_resource type="FontFile" uid="uid://b1djh1fsqg2aw" path="res://assets/njnaruto.ttf" id="1_nvuu3"]
@@ -39,8 +39,8 @@ corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bt7wd"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bntx"]
-bg_color = Color(0.0619072, 0.459029, 0.0894216, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1xl0t"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -48,8 +48,8 @@ corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3.5)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e66w7"]
-bg_color = Color(0.0400777, 0.35272, 0.061229, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdd4h"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -59,6 +59,204 @@ shadow_offset = Vector2(0, 3.5)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iqr46"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6kfx5"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_54npe"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eevti"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eg262"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d600y"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5bv1"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pjjl"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtfd2"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j4xus"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8c7wy"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sab0a"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5n28m"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lx14r"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tw2ee"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0pek"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx3q0"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50gup"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67pn7"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0e6k"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pau8d"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oihld"]
+bg_color = Color(0.713726, 0.713726, 0.713726, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdo2w"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -96,6 +294,24 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.5)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtv48"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bntx"]
+bg_color = Color(0.0619072, 0.459029, 0.0894216, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e66w7"]
+bg_color = Color(0.0400777, 0.35272, 0.061229, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.5)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2vhso"]
 bg_color = Color(0.0982677, 0.667579, 0.1393, 1)
@@ -212,12 +428,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1xl0t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jdd4h")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "1"
 
 [node name="Stats2" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 346.0
 offset_top = 202.0
 offset_right = 542.0
@@ -230,13 +447,14 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6kfx5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_54npe")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "2"
 script = ExtResource("4_rpa2k")
 
 [node name="Stats3" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 606.0
 offset_top = 202.0
 offset_right = 802.0
@@ -249,12 +467,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eevti")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eg262")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "3"
 
 [node name="Stats4" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 874.0
 offset_top = 202.0
 offset_right = 1070.0
@@ -267,12 +486,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d600y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u5bv1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "4"
 
 [node name="Stats5" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 80.0
 offset_top = 344.0
 offset_right = 276.0
@@ -285,13 +505,14 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4pjjl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gtfd2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "5"
 script = ExtResource("4_rpa2k")
 
 [node name="Stats6" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 346.0
 offset_top = 344.0
 offset_right = 542.0
@@ -304,12 +525,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j4xus")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8c7wy")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "6"
 
 [node name="Stats7" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 606.0
 offset_top = 344.0
 offset_right = 802.0
@@ -322,12 +544,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sab0a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5n28m")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "7"
 
 [node name="Stats8" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 874.0
 offset_top = 344.0
 offset_right = 1070.0
@@ -340,13 +563,14 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lx14r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tw2ee")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "8"
 script = ExtResource("4_rpa2k")
 
 [node name="Stats9" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 80.0
 offset_top = 488.0
 offset_right = 276.0
@@ -359,12 +583,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m0pek")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qx3q0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "9"
 
 [node name="Stats10" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 346.0
 offset_top = 488.0
 offset_right = 542.0
@@ -377,12 +602,13 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_50gup")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_67pn7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "10"
 
 [node name="Stats11" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 606.0
 offset_top = 488.0
 offset_right = 802.0
@@ -395,13 +621,14 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c0e6k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pau8d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "11"
 script = ExtResource("4_rpa2k")
 
 [node name="Stats12" type="Button" parent="hvite knapper"]
+visible = false
 offset_left = 874.0
 offset_top = 488.0
 offset_right = 1070.0
@@ -414,8 +641,8 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bt7wd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bntx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e66w7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oihld")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rdo2w")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "12"
 

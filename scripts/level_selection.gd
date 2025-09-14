@@ -59,6 +59,7 @@ func _ready():
 	if Global.level1_fullført>0:
 		grønn1.visible = true
 		hvit1.visible=false
+		hvit2.visible=true
 		rød_2.visible = false
 		if Global.coins_completed_level1:
 			gull1.visible=true
@@ -66,6 +67,8 @@ func _ready():
 			
 	if Global.level2_fullført>0:
 		grønn2.visible = true
+		hvit2.visible=false
+		hvit3.visible=true
 		rød_3.visible = false
 		if Global.coins_completed_level2:
 			gull2.visible=true
@@ -73,6 +76,8 @@ func _ready():
 			
 	if Global.level3_fullført>0:
 		grønn3.visible = true
+		hvit3.visible=false
+		hvit4.visible=true
 		rød_4.visible = false
 		if Global.coins_completed_level3:
 			gull3.visible=true
@@ -80,6 +85,8 @@ func _ready():
 			
 	if Global.level4_fullført>0:
 		grønn4.visible = true
+		hvit4.visible=false
+		hvit5.visible=true
 		rød_5.visible = false
 		if Global.coins_completed_level4:
 			gull4.visible=true
@@ -87,6 +94,8 @@ func _ready():
 			
 	if Global.level5_fullført>0:
 		grønn5.visible = true
+		hvit5.visible=false
+		hvit6.visible=true
 		rød_6.visible = false
 		if Global.coins_completed_level5:
 			gull5.visible=true
@@ -94,6 +103,8 @@ func _ready():
 			
 	if Global.level6_fullført>0:
 		grønn6.visible = true
+		hvit6.visible=false
+		hvit7.visible=true
 		rød_7.visible = false
 		if Global.coins_completed_level6:
 			gull6.visible=true
@@ -101,6 +112,8 @@ func _ready():
 			
 	if Global.level7_fullført>0:
 		grønn7.visible = true
+		hvit7.visible=false
+		hvit8.visible=true
 		rød_8.visible = false
 		if Global.coins_completed_level7:
 			gull7.visible=true
@@ -108,6 +121,8 @@ func _ready():
 			
 	if Global.level8_fullført>0:
 		grønn8.visible = true
+		hvit8.visible=false
+		hvit9.visible=true
 		rød_9.visible = false
 		if Global.coins_completed_level8:
 			gull8.visible=true
@@ -115,6 +130,8 @@ func _ready():
 			
 	if Global.level9_fullført>0:
 		grønn9.visible = true
+		hvit9.visible=false
+		hvit10.visible=true
 		rød_10.visible = false
 		if Global.coins_completed_level9:
 			gull9.visible=true
@@ -122,6 +139,8 @@ func _ready():
 			
 	if Global.level10_fullført>0:
 		grønn10.visible = true
+		hvit10.visible=false
+		hvit11.visible=true
 		rød_11.visible = false
 		if Global.coins_completed_level10:
 			gull10.visible=true
@@ -129,6 +148,8 @@ func _ready():
 			
 	if Global.level11_fullført>0:
 		grønn11.visible = true
+		hvit11.visible=false
+		hvit12.visible=true
 		rød_12.visible = false
 		if Global.coins_completed_level11:
 			gull11.visible=true
