@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="coin ninja"
+config/tags=PackedStringArray("playableprototype")
 run/main_scene="res://scener/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/image="res://assets/sprites/Untitled_Artwork(4).png"

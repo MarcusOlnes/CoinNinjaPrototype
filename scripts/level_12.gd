@@ -2,7 +2,7 @@ extends Node2D
 
 func _ready():
 	Global.level11_fullført=1
-
+	$Label4/AnimationPlayer3.play("fadeInFadeOut")
 func _on_portal_body_entered(body: Node2D) -> void:
 		if body is Player:
 			print("spiller i kollisjonssonen")

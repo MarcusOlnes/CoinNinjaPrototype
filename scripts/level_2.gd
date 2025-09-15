@@ -4,7 +4,7 @@ extends Node2D
 
 func _ready():
 	Global.level1_fullført = 1
-
+	$Label6/AnimationPlayer3.play("fadeInFadeOut")
 var level := 2
 var neste_level_tall := level + 1
 var neste_level_navn := "res://scener/level%d.tscn" % neste_level_tall

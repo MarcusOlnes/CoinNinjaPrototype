@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://bptmo2wkx12pn"]
+[gd_scene load_steps=42 format=4 uid="uid://bptmo2wkx12pn"]
 
 [ext_resource type="Texture2D" uid="uid://fby6yul2imre" path="res://assets/sprites/bakgrunn.png" id="1_x1e6c"]
 [ext_resource type="Script" path="res://scripts/level_5.gd" id="1_x1pj3"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bcyfrder035cm" path="res://scener/coin.tscn" id="7_4pt4o"]
 [ext_resource type="PackedScene" uid="uid://xws3b1mjnjdn" path="res://scener/blob.tscn" id="8_v4c4a"]
 [ext_resource type="PackedScene" uid="uid://dqr5i7pw3p1tm" path="res://scener/platform.tscn" id="10_3u67k"]
+[ext_resource type="PackedScene" uid="uid://n068csw1n42f" path="res://scener/level_sign.tscn" id="11_ay3oj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0uxe"]
 texture = ExtResource("1_x1e6c")
@@ -313,6 +314,43 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5wqd"]
 size = Vector2(97, 120)
 
+[sub_resource type="Animation" id="Animation_frb4c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_snxmt"]
+resource_name = "fadeInFadeOut"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667, 1.53333, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ms7c"]
+_data = {
+"RESET": SubResource("Animation_frb4c"),
+"fadeInFadeOut": SubResource("Animation_snxmt")
+}
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_x1pj3")
 
@@ -468,7 +506,7 @@ position = Vector2(1448, -64)
 collision_mask = 119
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2(1616, -160)
+position = Vector2(1640, -160)
 shape = SubResource("RectangleShape2D_m5wqd")
 
 [node name="coin13" parent="." instance=ExtResource("7_4pt4o")]
@@ -497,5 +535,19 @@ position = Vector2(1448, -80)
 
 [node name="coin25" parent="." instance=ExtResource("7_4pt4o")]
 position = Vector2(1448, -96)
+
+[node name="Label4" parent="." instance=ExtResource("11_ay3oj")]
+offset_left = 240.0
+offset_top = -48.0
+offset_right = 281.0
+offset_bottom = -25.0
+text = "Level 5"
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="Label4"]
+libraries = {
+"": SubResource("AnimationLibrary_8ms7c")
+}
+
+[node name="Node2D" type="Node2D" parent="Label4/AnimationPlayer3"]
 
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]

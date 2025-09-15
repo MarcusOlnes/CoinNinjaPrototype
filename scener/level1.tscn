@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://hk81o7pgmtqi"]
+[gd_scene load_steps=24 format=4 uid="uid://hk81o7pgmtqi"]
 
 [ext_resource type="PackedScene" uid="uid://ctwavhiohhvfl" path="res://scener/player.tscn" id="1_tmkka"]
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_uv4lg"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://xws3b1mjnjdn" path="res://scener/blob.tscn" id="8_57bw7"]
 [ext_resource type="FontFile" uid="uid://dapa7n7sjqka4" path="res://assets/Minecraftia-Regular.ttf" id="9_vj71j"]
 [ext_resource type="PackedScene" uid="uid://pge6qns5t5xv" path="res://scener/pause_meny.tscn" id="10_4xw5c"]
+[ext_resource type="PackedScene" uid="uid://n068csw1n42f" path="res://scener/level_sign.tscn" id="12_jx228"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vtbdi"]
 texture = ExtResource("3_t0l68")
@@ -85,6 +86,43 @@ distance = -28.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bry8"]
 size = Vector2(34, 120)
+
+[sub_resource type="Animation" id="Animation_frb4c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_snxmt"]
+resource_name = "fadeInFadeOut"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667, 1.53333, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ms7c"]
+_data = {
+"RESET": SubResource("Animation_frb4c"),
+"fadeInFadeOut": SubResource("Animation_snxmt")
+}
 
 [node name="level2" type="Node2D"]
 script = ExtResource("1_uv4lg")
@@ -266,5 +304,19 @@ theme_override_font_sizes/font_size = 8
 
 [node name="blob4" parent="." instance=ExtResource("8_57bw7")]
 position = Vector2(1294, 54)
+
+[node name="Label6" parent="." instance=ExtResource("12_jx228")]
+offset_left = 196.0
+offset_top = 29.0
+offset_right = 237.0
+offset_bottom = 52.0
+text = "Level 1"
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="Label6"]
+libraries = {
+"": SubResource("AnimationLibrary_8ms7c")
+}
+
+[node name="Node2D" type="Node2D" parent="Label6/AnimationPlayer3"]
 
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
