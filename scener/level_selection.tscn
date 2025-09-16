@@ -1502,6 +1502,25 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_53f6a")
 theme_override_styles/normal = SubResource("StyleBoxFlat_iqr46")
 text = "Back to level selection!"
 
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -165.0
+offset_right = 146.0
+offset_bottom = -130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("5_b2e58")
+theme_override_font_sizes/font_size = 20
+text = "Tip: press \"esc\" to pause"
+
 [connection signal="pressed" from="Back2Main" to="." method="_on_back_2_main_pressed"]
 [connection signal="pressed" from="hvite knapper/Stats" to="." method="_on_stats_pressed"]
 [connection signal="pressed" from="hvite knapper/Stats2" to="." method="_on_stats_2_pressed"]
