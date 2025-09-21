@@ -267,12 +267,13 @@ shape = SubResource("RectangleShape2D_1bry8")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 56.0
-offset_top = -19.0
+offset_top = -27.0
 offset_right = 352.0
-offset_bottom = 12.0
+offset_bottom = 4.0
 theme_override_fonts/font = ExtResource("9_vj71j")
 theme_override_font_sizes/font_size = 8
 text = "Use the left and right arrows to move! (A & D)
+Press esc to pause & exit level
 "
 
 [node name="Label4" type="Label" parent="."]
